@@ -3,9 +3,9 @@ import RPi.GPIO as GPIO
 
 app = Flask(__name__)
 
-pins = (22, 23, 24)
+pins = (15, 16, 18)
 
-GPIO.setmode(GPIO.BMC)
+GPIO.setmode(GPIO.BOARD)
 GPIO.setup(pins, GPIO.OUT)
 GPIO.output(pins, GPIO.LOW)
 
