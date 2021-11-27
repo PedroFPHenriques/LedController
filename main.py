@@ -19,9 +19,14 @@ def map_color(x, in_min, in_max, out_min, out_max):
 def setColor(col):
     R_val = col >> 8
     G_val = col & 0x00FF
+    print(R_val)
+    print(G_val)
 
     R_val = map_color(R_val, 0, 255, 0, 100)
     G_val = map_color(G_val, 0, 255, 0, 100)
+
+    print(R_val)
+    print(G_val)
 
     p_R.ChangeDutyCycle(R_val)
     p_G.ChangeDutyCycle(G_val)
@@ -36,7 +41,7 @@ def hello():
 def on():
     p_R.start(0)
     p_G.start(0)
-    setColor(0xFF00)
+    setColor(0x00FF)
     return render_template('on.html')
 
 
