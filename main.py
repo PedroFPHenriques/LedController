@@ -9,8 +9,8 @@ GPIO.setmode(GPIO.BOARD)
 GPIO.setup(pins, GPIO.OUT)
 GPIO.output(pins, GPIO.LOW)
 
-p_R = GPIO.PWM(pins[0], 2000)
-p_B = GPIO.PWM(pins[1], 2000)
+p_B = GPIO.PWM(pins[0], 2000)
+p_R = GPIO.PWM(pins[1], 2000)
 p_G = GPIO.PWM(pins[2], 2000)
 
 def map_color(x, in_min, in_max, out_min, out_max):
