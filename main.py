@@ -41,7 +41,7 @@ def hello():
 def on():
     p_R.start(0)
     p_G.start(0)
-    setColor(0x00FF)
+    setColor(0x00FF00)
     return render_template('on.html')
 
 
