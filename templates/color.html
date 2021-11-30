@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../Bootstrap/bootstrap.min.css">
+  <link type="text/css" rel="stylesheet" href="../css/lightslider.css" />
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="../js/lightslider.js"></script>
+  <script type="text/javascript" src="../ColorPicker/iro.js"></script>
+
+</head>
+<body>
+
+<div class="jumbotron text-center">
+  <h1>My First Bootstrap Page</h1>
+  <p>Resize this responsive page to see the effect!</p>
+</div>
+
+<div class="demo">
+    <ul id="lightSlider">
+        <li data-thumb="http://sachinchoolur.github.io/lightslider/img/thumb/cS-1.jpg">
+            <div class="col-sm-4">
+                <div id="picker"></div>
+            </div>
+        </li>
+        <li data-thumb="http://sachinchoolur.github.io/lightslider/img/thumb/cS-2.jpg">
+            <img src="http://sachinchoolur.github.io/lightslider/img/cS-2.jpg" />
+        </li>
+        <li data-thumb="http://sachinchoolur.github.io/lightslider/img/thumb/cS-3.jpg">
+            <img src="http://sachinchoolur.github.io/lightslider/img/cS-3.jpg" />
+        </li>
+        <li data-thumb="http://sachinchoolur.github.io/lightslider/img/thumb/cS-4.jpg">
+            <img src="http://sachinchoolur.github.io/lightslider/img/cS-4.jpg" />
+        </li>
+        <li data-thumb="http://sachinchoolur.github.io/lightslider/img/thumb/cS-5.jpg">
+            <img src="http://sachinchoolur.github.io/lightslider/img/cS-5.jpg" />
+        </li>
+    </ul>
+</div>
+
+
+<script>
+  var colorPicker = new iro.ColorPicker("#picker", {
+  // Set the size of the color picker
+  width: 320,
+  // Set the initial color to pure red
+  color: "#00ff00"
+  });
+</script>
+
+
+
+</body>
+</html>

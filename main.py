@@ -31,6 +31,10 @@ def setColor(col):
 def hello():
     return render_template('Led.html')
 
+@app.route("/color")
+def hello():
+    return render_template('color.html')
+
 
 @app.route('/on')
 def on():
