@@ -29,12 +29,7 @@ def setColor(col):
 
 @app.route("/")
 def hello():
-    return render_template('Led.html')
-
-@app.route("/color")
-def hello():
-    return render_template('color.html')
-
+    return render_template('index.html')
 
 @app.route('/on')
 def on():
@@ -50,6 +45,7 @@ def off():
     p_G.stop()
     GPIO.output(pins, GPIO.LOW)
     return render_template('off.html')
+
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=80, debug=True)
